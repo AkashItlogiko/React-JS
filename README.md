@@ -1,8 +1,9 @@
-# React + Vite
+# Create first React project with Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## First amader ata dakte hobe ja local maje node.js install kora ashe ki na na thakle kore nita hobe.
 
-Currently, two official plugins are available:
+## Tar Por aketa vite project install kore nita hobe `npm create vite@latest`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Ar por oi Project ar Maje ``npm install` commend used korte hobe.
+
+## Video-1 [![[React project with Vite](https://www.youtube.com/watch?v=_yYO_ly9hmY&list=PLgH5QX0i9K3rGtitufynBKMy5gAFpa1y8&index=6)]]
