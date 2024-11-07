@@ -1,4 +1,5 @@
-import List from './components/UniqueList/List';
+import STATE from '../src/STATE';
+
 export default function App() {
-  return <List />;
+  return <div></div>;
 }
