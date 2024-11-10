@@ -1,5 +1,9 @@
-import STATE from '../src/STATE';
+import STATE from './STATE';
 
 export default function App() {
-  return <div></div>;
+  return (
+    <div>
+      <STATE />
+    </div>
+  );
 }
