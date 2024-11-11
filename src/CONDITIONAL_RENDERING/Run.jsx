@@ -7,11 +7,13 @@ export default class Run extends Component {
     super(props);
 
     this.state = {
-      isLoggedIn: false,
+      isLoggedIn: true,
     };
   }
 
   render() {
-    return <div>Run</div>;
+    const { isLoggedIn } = this.state;
+
+    return <div>{isLoggedIn ? <HomePage /> : <LoginPage />}</div>;
   }
 }
