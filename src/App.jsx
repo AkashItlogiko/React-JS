@@ -1,10 +1,9 @@
-import Run from './CONDITIONAL_RENDERING/Run';
-import './style.css';
+import Index from './Event_Handler/Index';
 
 export default function App() {
   return (
     <div>
-      <Run />
+      <Index />
     </div>
   );
 }
