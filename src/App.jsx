@@ -1,8 +1,9 @@
-import Index from './EVENT_BINDING/Index';
+import Index1 from './HOOKS_USESTATE/Index1';
+
 export default function App() {
   return (
     <div>
-      <Index />
+      <Index1 />
     </div>
   );
 }
