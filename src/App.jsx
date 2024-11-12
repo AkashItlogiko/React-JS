@@ -1,5 +1,4 @@
-import Index from './Event_Handler/Index';
-
+import Index from './EVENT_BINDING/Index';
 export default function App() {
   return (
     <div>
