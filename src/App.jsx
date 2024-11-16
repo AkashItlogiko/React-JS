@@ -1,9 +1,13 @@
-import Form from './components/FORM/Form';
+import React from 'react';
+
+import Child from './components/Satet_Lifting/Child';
 
 export default function App() {
+  const data = 'I am from parent (App)';
+
   return (
     <div>
-      <Form />
+      <Child data2={data} />
     </div>
   );
 }
