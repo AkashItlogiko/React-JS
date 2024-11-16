@@ -2,29 +2,17 @@ import React, { useState } from 'react';
 import style from './form.module.css';
 
 export default function Form() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [user, setUser] = useState({ name: '', email: '', password: '' });
+  const { name, email, password } = user;
 
-  const handleNameChange = e => {
-    setName(e.target.value);
+  const handeleChange = e => {
+    setUser({ ...user, [e.target.name]: e.target.value });
   };
 
-  const handleEmailChange = e => {
-    setEmail(e.target.value);
-  };
-
-  const handlePasswordChange = e => {
-    setPassword(e.target.value);
-  };
   const handleSubmit = e => {
     console.log('form is submitted');
-    let userInfo = {
-      neme: name,
-      email: email,
-      password: password,
-    };
-    console.log(userInfo);
+
+    console.log(user);
     e.preventDefault();
   };
 
@@ -40,7 +28,7 @@ export default function Form() {
             name="name"
             id="name"
             value={name}
-            onChange={handleNameChange}
+            onChange={handeleChange}
             required
           />
         </div>
@@ -52,7 +40,7 @@ export default function Form() {
             name="email"
             id="email"
             value={email}
-            onChange={handleEmailChange}
+            onChange={handeleChange}
             required
           />
         </div>
@@ -64,7 +52,7 @@ export default function Form() {
             name="password"
             id="password"
             value={password}
-            onChange={handlePasswordChange}
+            onChange={handeleChange}
             required
           />
         </div>
