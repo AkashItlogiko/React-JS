@@ -1,6 +1,10 @@
 import React from 'react';
 
-export default Child = props => {
+const Child = props => {
+  const data = 'I am from Child Componet';
+
+  props.OnChildData(data);
+
   return (
     <div>
       <p>I am Child components</p>
@@ -8,3 +12,4 @@ export default Child = props => {
     </div>
   );
 };
+export default Child;
