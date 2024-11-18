@@ -1,17 +1,17 @@
 import React from 'react';
+import Todo from './Todo';
+import NewTodo from './NewTodo';
 
-import Child from './components/Satet_Lifting/Child';
-
-export default function App() {
-  const data = 'I am from parent (App)';
-
-  const handleChildData = childData => {
-    console.log('App : ' + childData);
+const App = () => {
+  const handleNewTodo = newTodo => {
+    console.log(newTodo);
   };
 
   return (
     <div>
-      <Child data2={data} OnChildData={handleChildData} />
+      <NewTodo onHandleNewTodo={handleNewTodo} />
+      <Todo title="learn react.js" />
     </div>
   );
-}
+};
+export default App;
