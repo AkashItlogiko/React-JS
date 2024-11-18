@@ -1,5 +1,9 @@
-const Todo = () => {
-  return <div></div>;
+const Todo = props => {
+  return (
+    <div>
+      <p>{props.data}</p>
+    </div>
+  );
 };
 
 export default Todo;

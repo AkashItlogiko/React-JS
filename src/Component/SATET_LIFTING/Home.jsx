@@ -1,4 +1,3 @@
-import React from 'react';
 import Todos from './Todos';
 
 const Home = () => {
@@ -6,7 +5,7 @@ const Home = () => {
 
   return (
     <div>
-      <Todos todo={todos} />
+      <Todos todoA={todos} />
     </div>
   );
 };

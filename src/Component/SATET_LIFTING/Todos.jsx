@@ -1,9 +1,10 @@
+import Todo from './Todo';
 const Todos = props => {
-  console.log(props.todo);
+  console.log(props.todoA);
   return (
     <div>
-      {props.todo.map((to, index) => (
-        <p key={index}>{to}</p>
+      {props.todoA.map((to, index) => (
+        <Todo key={index} data={to} />
       ))}
     </div>
   );
