@@ -1,16 +1,9 @@
-import React from 'react';
-import Todo from './Todo';
-import NewTodo from './NewTodo';
+import Home from './Component/SATET_LIFTING/Home';
 
 const App = () => {
-  const handleNewTodo = newTodo => {
-    console.log(newTodo);
-  };
-
   return (
     <div>
-      <NewTodo onHandleNewTodo={handleNewTodo} />
-      <Todo title="learn react.js" />
+      <Home />
     </div>
   );
 };
