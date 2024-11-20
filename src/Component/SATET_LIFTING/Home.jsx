@@ -8,7 +8,7 @@ const Home = () => {
   const [todos, setTodos] = useState(dummyTodos);
 
   const handleNewTodo = newTodo => {
-    console.log(newTodo);
+    setTodos([...todos, newTodo]);
   };
 
   return (
