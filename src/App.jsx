@@ -1,10 +1,7 @@
-import Home from './Component/SATET_LIFTING/Home';
+import React from 'react';
 
 const App = () => {
-  return (
-    <div>
-      <Home />
-    </div>
-  );
+  return <div></div>;
 };
+
 export default App;
