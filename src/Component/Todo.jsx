@@ -10,6 +10,11 @@ const Todo = props => {
         <h3>{title}</h3>
         <p>{desc}</p>
       </div>
+      <div>
+        <button>
+          <i className="fa fa-trash fa-2x"></i>
+        </button>
+      </div>
     </article>
   );
 };
