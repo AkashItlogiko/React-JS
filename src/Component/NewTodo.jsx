@@ -5,7 +5,7 @@ const NewTodo = () => {
     <form>
       <div>
         <label htmlFor="title">Title: </label>
-        <input type="text" id="title" name="title" />
+        <input type="text" id="title" name="title" id="" />
       </div>
     </form>
   );
