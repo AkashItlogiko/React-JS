@@ -5,6 +5,7 @@
   padding: 0.5rem;
   border-radius: 0.6rem;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .form-field {
@@ -30,4 +31,5 @@
 .form button:hover {
   background-color: orange;
   color: white;
+  border-radius: 0.6rem;
 }
