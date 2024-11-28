@@ -11,6 +11,7 @@ const Home = () => {
     setTodos(prevTodos => {
       return [...prevTodos, { id: uuidv4(), todox }];
     });
+    console.log(todos);
   };
 
   return (
