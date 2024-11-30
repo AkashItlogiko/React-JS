@@ -14,11 +14,18 @@ const Home = () => {
     console.log(todos);
   };
 
+  const handleRemoveTodo = id => {
+    setTodos(prevTodo => {
+      const filterTodo = prevTodo.filter(todo => todo.id !== id);
+      return filterTodo;
+    });
+  };
+
   return (
     <div className={style.container}>
       <h1 style={{ color: 'white' }}>Todo App</h1>
       <NewTodo onAddTodo={handleTodo} />
-      <Todos todos={todos} />
+      <Todos todos={todos} onRemoveTodo={handleRemoveTodo} />
     </div>
   );
 };

@@ -2,16 +2,16 @@ import React from 'react';
 import style from './todo.module.css';
 
 const Todo = props => {
-  const { title, id, desc } = props.todo;
+  const { title, desc } = props.todo;
+  const { id } = props;
 
   const handleClick = id => {
-    alert(id);
+    props.onRemoveTodo(id);
   };
 
   return (
     <article className={style.todo}>
       <div>
-        <h1>{id}</h1>
         <h3>{title}</h3>
         <p>{desc}</p>
       </div>
