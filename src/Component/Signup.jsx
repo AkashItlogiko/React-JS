@@ -1,42 +1,34 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
+
+import { useFormik } from 'formik';
 
 const Signup = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-
-  const handleNameChange = e => {
-    setName(e.target.value);
-  };
-  const handleEmailChange = e => {
-    setEmail(e.target.value);
-  };
-  const handlePasswordChange = e => {
-    setPassword(e.target.value);
-  };
-
-  const handleSubmit = e => {
-    e.preventDefault();
-    const newUser = {
-      name,
-      email,
-      password,
-    };
-    console.log(newUser);
-  };
+  const formik = useFormik({
+    initialValues: {
+      name: '',
+      email: '',
+      password: '',
+    },
+    //reserFrom diya form ka reset kore thaki
+    onSubmit: (values, { resetForm }) => {
+      console.log(values);
+      resetForm({ values: '' });
+    },
+  });
 
   return (
     <div>
       <h2>User signup</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={formik.handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
           <input
             type="text"
             id="name"
             name="name"
-            onChange={handleNameChange}
-            value={name}
+            onChange={formik.handleChange}
+            //ay jayga thaki amra formik thaki value gula ka bar kore nibo and jar jay value say gula ka set kore dibo.
+            value={formik.values.name}
           />
         </div>
         <div>
@@ -45,8 +37,9 @@ const Signup = () => {
             type="email"
             id="email"
             name="email"
-            onChange={handleEmailChange}
-            value={email}
+            onChange={formik.handleChange}
+            //ay jayga thaki amra formik thaki value gula ka bar kore nibo and jar jay value say gula ka set kore dibo.
+            value={formik.values.email}
           />
         </div>
         <div>
@@ -55,8 +48,9 @@ const Signup = () => {
             type="password"
             id="password"
             name="password"
-            onChange={handlePasswordChange}
-            value={password}
+            onChange={formik.handleChange}
+            //ay jayga thaki amra formik thaki value gula ka bar kore nibo and jar jay value say gula ka set kore dibo.
+            value={formik.values.password}
           />
         </div>
         <button type="submit">signup</button>
