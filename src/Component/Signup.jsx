@@ -9,7 +9,7 @@ const Signup = () => {
       email: '',
       password: '',
     },
-    //reserFrom diya form ka reset kore thaki
+    //reserFrom diya form ka reset kore hoy
     onSubmit: (values, { resetForm }) => {
       console.log(values);
       resetForm({ values: '' });
