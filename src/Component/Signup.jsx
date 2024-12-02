@@ -1,4 +1,4 @@
-// import React, { useState } from 'react';
+import * as yup from 'yup';
 
 import { useFormik } from 'formik';
 
@@ -9,12 +9,25 @@ const Signup = () => {
       email: '',
       password: '',
     },
+    validationSchema: yup.object({
+      name: yup
+        .string()
+        .min(2, 'name must have atleast 2 characters')
+        .required(),
+      email: yup.string().email().required(),
+      password: yup
+        .string()
+        .min(6, 'password must have atleast 6 characters')
+        .required(),
+    }),
     //reserFrom diya form ka reset kore hoy
     onSubmit: (values, { resetForm }) => {
       console.log(values);
       resetForm({ values: '' });
     },
   });
+
+  console.error(formik.errors);
 
   return (
     <div>

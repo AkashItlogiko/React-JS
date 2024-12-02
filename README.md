@@ -1,15 +1,7 @@
-# control-form-data-using-formik-package.
+# yup package used kore amra form validation Kore thaki.
 
-## Input validtion jonna amra jodi formik used korte cay tayla amader ahge formik package install kore nita hobe.``npm install formik` ## ata hocca formik pakage commend
+## 1st Step: `npm i yup`commend used kore ay package ta ka install kore nita hobe.
 
-## Formik maje onClicke and handleSubmit defult vabe thaki sudu ataka set kore nita hoy.
+## 2nd Step: install korbar por package ta ka import `import * as yup from 'yup'`
 
-## `initialValues`amra used kore thaki useState ar bodole `ata initialValues hocca formik ar aketa propaty`
-
-## `handleChange` and `handleSubmit` formik maje ahge thaki create kora ashe.
-
-## `resetForm`hocca form ta ka reset kore thaki.
-
-[formik package tutorial](https://www.youtube.com/watch?v=2W1DnKc0wH4&list=PLgH5QX0i9K3rGtitufynBKMy5gAFpa1y8&index=37)
-
-[formik pachage link](https://formik.org/docs/tutorial)
+## 3rd Step: `validationSchema`ay propaty used kore Schema ka valid kora hoy.Schema hocca amra jay data gula niya kaj korce tar aketa structure.
