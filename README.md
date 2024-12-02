@@ -10,4 +10,6 @@
 
 ## `resetForm`hocca form ta ka reset kore thaki.
 
-[formik package](https://www.youtube.com/watch?v=2W1DnKc0wH4&list=PLgH5QX0i9K3rGtitufynBKMy5gAFpa1y8&index=37)
+[formik package tutorial](https://www.youtube.com/watch?v=2W1DnKc0wH4&list=PLgH5QX0i9K3rGtitufynBKMy5gAFpa1y8&index=37)
+
+[formik pachage link](https://formik.org/docs/tutorial)
