@@ -27,7 +27,40 @@ const Signup = () => {
     },
   });
 
-  console.error(formik.errors);
+  {
+    /* Name reladetd errors ay jayga thaki dhekano hoyasa formik used kore. */
+  }
+  {
+    /* Ar ay jayga ja formik maja touched aketa propaty thaki jar dara ja kno input maje user jodi validtation byera kno kicu kore tayla input touch korar por ay errors gula diba */
+  }
+  const randerNameError = formik.touched.name && formik.errors.name && (
+    <span style={{ color: 'red' }}>{formik.errors.name}</span>
+  );
+
+  {
+    /* Email reladetd errors ay jayga thaki dhekano hoyasa formik used
+          kore. */
+  }
+  {
+    /* Ar ay jayga ja formik maja touched aketa propaty thaki jar dara ja kno input maje user jodi validtation byera kno kicu kore tayla input touch korar por ay errors gula diba */
+  }
+
+  const randerEmailError = formik.touched.email && formik.errors.email && (
+    <span style={{ color: 'red' }}>{formik.errors.email}</span>
+  );
+
+  {
+    /* Password reladetd errors ay jayga thaki dhekano hoyasa formik used
+          kore. */
+  }
+  {
+    /* Ar ay jayga ja formik maja touched aketa propaty thaki jar dara ja kno input maje user jodi validtation byera kno kicu kore tayla input touch korar por ay errors gula diba */
+  }
+
+  const randerPasswordError = formik.touched.password &&
+    formik.errors.password && (
+      <span style={{ color: 'red' }}>{formik.errors.password}</span>
+    );
 
   return (
     <div>
@@ -42,7 +75,11 @@ const Signup = () => {
             onChange={formik.handleChange}
             //ay jayga thaki amra formik thaki value gula ka bar kore nibo and jar jay value say gula ka set kore dibo.
             value={formik.values.name}
+            required
           />
+          <br />
+
+          {randerNameError}
         </div>
         <div>
           <label htmlFor="email">Email:</label>
@@ -53,7 +90,11 @@ const Signup = () => {
             onChange={formik.handleChange}
             //ay jayga thaki amra formik thaki value gula ka bar kore nibo and jar jay value say gula ka set kore dibo.
             value={formik.values.email}
+            required
           />
+          <br />
+
+          {randerEmailError}
         </div>
         <div>
           <label htmlFor="password">Password:</label>
@@ -64,7 +105,11 @@ const Signup = () => {
             onChange={formik.handleChange}
             //ay jayga thaki amra formik thaki value gula ka bar kore nibo and jar jay value say gula ka set kore dibo.
             value={formik.values.password}
+            required
           />
+          <br />
+
+          {randerPasswordError}
         </div>
         <button type="submit">signup</button>
       </form>
