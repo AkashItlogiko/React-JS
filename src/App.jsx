@@ -1,9 +1,9 @@
-import './App.css';
+import Toggle from './components/Toggle/Toggle';
 
 function App() {
   return (
     <div>
-      <h1>Hello</h1>
+      <Toggle />
     </div>
   );
 }
