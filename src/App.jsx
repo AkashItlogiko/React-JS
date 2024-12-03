@@ -1,9 +1,8 @@
-import Toggle from './components/Toggle/Toggle';
-
+import FAQS from './components/FAQ/FAQS';
 const App = () => {
   return (
     <div className="App">
-      <Toggle />
+      <FAQS />
     </div>
   );
 };
