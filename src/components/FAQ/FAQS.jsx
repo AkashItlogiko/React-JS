@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import { faqsData } from './data';
+import FAQ from './FAQ';
 
 const FAQS = () => {
   const [faqs, setFAQS] = useState(faqsData);
   return (
-    <div>
       <main>
         <section>
-          <h1>EAQS</h1>
-          {faqs.map(faq => {})}
+          <h1>FAQS</h1>
+          {faqs.map(faq => <FAQ key={faq.id}/> )}
         </section>
       </main>
-    </div>
+    
   );
 };
 
