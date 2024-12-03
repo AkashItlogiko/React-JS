@@ -1,10 +1,9 @@
-import React from 'react';
-import Signup from './Component/Signup';
+import Toggle from './components/Toggle/Toggle';
 
 const App = () => {
   return (
     <div className="App">
-      <Signup />
+      <Toggle />
     </div>
   );
 };
