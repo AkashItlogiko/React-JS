@@ -1,8 +1,8 @@
-import FAQS from './components/FAQ/FAQS';
+import UseEffect from './components/useEffect/UseEffect';
 const App = () => {
   return (
-    <div className="App">
-      <FAQS />
+    <div>
+      <UseEffect />
     </div>
   );
 };
