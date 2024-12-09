@@ -1,8 +1,9 @@
-import UseEffect from './components/useEffect/UseEffect';
+import Datafetch from './components/useEffect/Datafetch';
+
 const App = () => {
   return (
     <div>
-      <UseEffect />
+      <Datafetch />
     </div>
   );
 };
