@@ -1,4 +1,4 @@
-import Datafetch from './components/useEffect/Datafetch';
+import Datafetch from './components/CustomHook/DataFetch';
 
 const App = () => {
   return (
