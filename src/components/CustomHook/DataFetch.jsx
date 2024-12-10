@@ -1,44 +1,24 @@
 import React, { useEffect, useState } from 'react';
-
-const loadingMessage = <p>Todo Is Loading</p>;
+import useFetch from './useFetch';
 
 const Datafetch = () => {
-  const [todos, setTodos] = useState(null);
+  const { data, isLodingh, error } = useFetch(
+    'https://jsonplaceholder.typicode.com/todos'
+  );
 
-  const [isLodingh, setIsLoding] = useState(true);
-
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/todos')
-      .then(res => {
-        if (!res.ok) {
-          throw Error('feching is not sucessfull');
-        } else {
-          return res.json();
-        }
-      })
-      .then(data => {
-        setTodos(data);
-        setIsLoding(false);
-        setError(null);
-      })
-      .catch(error => {
-        setError(error.message);
-        setIsLoding(false);
-      });
-  }, []);
+  const loadingMessage = <p>Todo Is Loading</p>;
+  const errorMessage = <p>{error}</p>;
 
   const todosElement =
-    todos &&
-    todos.map(todo => {
+    data &&
+    data.map(todo => {
       return <p key={todo.id}>{todo.title}</p>;
     });
 
   return (
     <div>
       <h1>Todos</h1>
-      {error && <p>{error}</p>}
+      {error && <p>{errorMessage}</p>}
       {isLodingh && loadingMessage}
       {todosElement}
     </div>
