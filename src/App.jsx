@@ -1,9 +1,8 @@
-import Datafetch from './components/CustomHook/DataFetch';
-
+import Tostify from './Components/Tostify';
 const App = () => {
   return (
     <div>
-      <Datafetch />
+      <Tostify />
     </div>
   );
 };
