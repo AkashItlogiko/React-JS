@@ -1,13 +1,13 @@
-# Display notifications using react-toastify
+# Project Country App Project -
 
-## 1st step : `npm i react-toastify` ay npm package install kore nita hobe.
+## step 1: basic structure setup
 
-## React toastify amra used kore thaki ja kno kicu display updata hoya thaki popup display ta popup show kore thaki.
+## step 2: fetch data
 
-[!react-toastify](https://www.youtube.com/watch?v=IP058zeOBjA&list=PLgH5QX0i9K3rGtitufynBKMy5gAFpa1y8&index=45)
+## step 3: display data
 
-## import { ToastContainer, toast } from 'react-toastify';
+## step 4: remove country functionality
 
-## import 'react-toastify/dist/ReactToastify.css';
+## step 5: search country functionality
 
-## ay 2ta componet import kore nita hobe tar por amra tostify usd korte parbo ja kno update ba deleted moto bisoy gula ta amra tostify used korte parbo.
+[!Countery](https://www.youtube.com/watch?v=7ujsEmu8PkQ&list=PLgH5QX0i9K3rGtitufynBKMy5gAFpa1y8&index=47)

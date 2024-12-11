@@ -1,8 +1,8 @@
-import Tostify from './Components/Tostify';
+import Countery from './Components/Countery';
 const App = () => {
   return (
     <div>
-      <Tostify />
+      <Countery />
     </div>
   );
 };
