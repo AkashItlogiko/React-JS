@@ -1,8 +1,10 @@
-import Countery from './Components/Countery';
+import DynamicStyling from './Components/DynamicStyling';
+import './App.css';
+
 const App = () => {
   return (
     <div>
-      <Countery />
+      <DynamicStyling />
     </div>
   );
 };
