@@ -1,10 +1,10 @@
-import DynamicStyling from './Components/DynamicStyling';
-import './App.css';
+// import './App.css';
+import Fragment from './Components/Fragment';
 
 const App = () => {
   return (
     <div>
-      <DynamicStyling />
+      <Fragment />
     </div>
   );
 };
