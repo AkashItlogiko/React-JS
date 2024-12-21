@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 const DynamicStyling = () => {
   const [name, setName] = useState('');
-  const [validInput, setValidInput] = useState(false);
+  const [validInput, setValidInput] = useState(true);
 
   useEffect(() => {
     if (name.length < 2) {
