@@ -1,11 +1,11 @@
 import React from 'react';
+import Table from './Table/Table';
 
 const Fragment = () => {
   return (
-    <>
-      <h2>I am H2</h2>
-      <p>I am Paragraph</p>
-    </>
+    <div>
+      <Table />
+    </div>
   );
 };
 
