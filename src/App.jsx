@@ -1,12 +1,11 @@
 // import './App.css';
-import Fragment from './Components/Fragment';
+
+import Users from "./Components/Users";
 
 const App = () => {
-  return (
-    <div>
-      <Fragment />
-    </div>
-  );
+  return <div>
+    <Users/>
+  </div>;
 };
 
 export default App;
