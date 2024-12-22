@@ -1,11 +1,23 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
+console.log(PropTypes);
 
 const User = props => {
   return (
     <div>
       <h1>{props.userName}</h1>
+      <h3>{props.userId}</h3>
     </div>
   );
 };
+User.propTypes = {
+  userName: PropTypes.string,
+  userId: PropTypes.number,
+};
+
+User.defaultTypes = {
+  
+}
 
 export default User;
