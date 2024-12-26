@@ -3,7 +3,7 @@ import User from './User';
 
 const Users = () => {
   const [userName, setUserName] = useState('Anisul Islam');
-  const [userId, setUserID] = useState(101);
+  const [userId, setUserID] = useState();
   return (
     <>
       <User userName={userName} userId={userId} />

@@ -16,8 +16,9 @@ User.propTypes = {
   userId: PropTypes.number,
 };
 
-User.defaultTypes = {
-  
-}
+User.defaultProps = {
+  userName: 'default name',
+  userId: 10100,
+};
 
 export default User;
