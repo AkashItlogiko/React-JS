@@ -1,11 +1,11 @@
 // import './App.css';
 
-import UserForm from './Components/UserForm';
+import Index from './Components/Index';
 
 const App = () => {
   return (
     <div>
-      <UserForm />
+      <Index />
     </div>
   );
 };
