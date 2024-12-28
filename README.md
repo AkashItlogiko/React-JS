@@ -1,17 +1,4 @@
-# PropTypes | built-in type checking
+# user ref a functional component with example
+[ref](https://www.youtube.com/watch?v=l5z137GWakU&list=PLgH5QX0i9K3rGtitufynBKMy5gAFpa1y8&index=54)
 
-[(PropTypes)](https://www.youtube.com/watch?v=mnPJrxHUarA&list=PLgH5QX0i9K3rGtitufynBKMy5gAFpa1y8&index=51)
-
-## PropTypes ar maddhome amra Props ar data-type check korte pari....
-
-`Example:` jemon dhora jak amader akta props ache userName nam aa and ami oi
-userName props ke props-type ar maddhome bole dite pari amader ai userName porps
-ar data-type ta ki hobe...jemon jodi ami amader userName props ar data-type ta
-string set kore dite pari tahole kew eee amader oono data-type value pass korte
-parbe na...jodi kew string bade oono kichu pass kore amader ai userName props ar
-moddhe tahole akta error show korbe...ja amader debugging ar jonno khub sahajjo
-korbe.
-
-`Usegs:`PropsType small project ar kheetre na bebohar korai valo karon code
-oonek boro hoye jabe...kintu boro project ar khettre ai PropsType ta use kora
-better....
+```ref``` amader directly Dom(Dom Object Model)ke menupulate korte sahajjo kore.
