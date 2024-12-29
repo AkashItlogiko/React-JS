@@ -9,15 +9,21 @@ const booksData = [
   { id: 3, name: 'Srikanta' },
 ];
 
+const Modal = () => {
+  
+}
+
 const Index = () => {
   const [books, setbooks] = useState(booksData);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalText, setModalText] = useState('');
   const [bookName, setbookName] = useState('');
 
   const handleSubmit = e => {
     e.preventDefault();
     setbooks(prevState => {
       const newBook = { id: uuidv4(), name: bookName };
-      console.log(newBook);
+
       return [...prevState, newBook];
     });
   };
