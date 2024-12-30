@@ -1,11 +1,11 @@
 // import './App.css';
 
-import Index from './Components/Index';
+import Component1 from './Components/Component1';
 
 const App = () => {
   return (
     <div>
-      <Index />
+      <Component1 />
     </div>
   );
 };

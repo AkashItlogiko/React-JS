@@ -1,19 +1,22 @@
-# React Hooks | useReducer Hook
+![image](./public/Screenshot%20from%202023-12-20%2018-21-35.png)
 
-[(useReducer)](https://www.youtube.com/watch?v=l_BhBNhNwhE&list=PLgH5QX0i9K3rGtitufynBKMy5gAFpa1y8&index=56)
+[prop drilling](https://www.youtube.com/watch?v=_JNIQXYSUu4&list=PLgH5QX0i9K3rGtitufynBKMy5gAFpa1y8&index=56)
 
-## amra amader ReactJs ar sov hook gula Function Component ar moddhe likha thaki..
+amra ai oporer image theke dekhte parchi amader akahene 4ta component ache aita
+hote pare jekono component and ai 4ta component ar moddhe parent component2 ta
+hocche component1 ar child component3 ta hocche component2 ar child and
+component4 hocche component3 ar child akhon ame jodi component1 thaki component4
+ar moddhe kno data pass korte cay tayle amader props akera aivabe data pass
+korte hobe.
 
-`useReduser`Hook ar kaj hocca jmn dhora jak
+## component1->component2->component3->component4
 
-amader books nam diya aketa data list ache and ami oi books data list ar moddhe
-new book add korte parbo and new book add korbar sate sate amader akete add book
-ba amra jmn dita cay tmn aketa text message show korate chayce amader modal ar
-moddhe..to ai kaj gulo korar jonna amader books,modelText,isModelOpen ai 3ta
-state nita hobe kintu amra ai kajtake `useReducer`hook use kore 1ta mattro
-state dara korte pari...
+and aitaki bole `Prop drilling` mane prop ke driling kore amdaer component1
+thaki componet4 ar maje niya jate pari..
 
-jodi amader 2ta ba 3ta state thaki tar jonna useReducer hook ta use na kori
-valo...kintu jodi onak gula ak type ar state use korte hoy jara akee onnner
-sathe innter related shei khetrre amra useReducer hook use kore oi state guloke
-aketa state ar moddha control korte pari.
+kintu ay ai `Prop drilling` ar akta problem hocche jodi ami component1 thaki
+component4 ar moddhe sorasori data ba string ta pass korte chai.
+
+## component1->component4 ta amra probo na
+
+## Prop drilling ar ai problem take amra `useContext` Hook ar maddhome solve korte pari.
