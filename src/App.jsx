@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 import Users from './Components/Users';
+import NewUser from './Components/NewUser';
+import { UsersContext } from './ContextAPI/UsersContext';
 
 // import './App.css';
 
@@ -10,10 +12,21 @@ const App = () => {
     { id: 1, username: 'Anisul kaka' },
     { id: 2, username: 'Dip kaku' },
   ]);
+
+  const handleDeleteUser = id => {
+    const filteredUsers = users.filter(use => use.id !== id);
+    setUsers(filteredUsers);
+  };
+  const handleAddNewUser = newUser => {
+    setUsers(prevUsers => [...prevUsers, newUser]);
+  };
   return (
-    <div>
-      <Users users={users} />
-    </div>
+    <UsersContext.Provider value={{ users, setUsers }}>
+      <div>
+        <NewUser handleAddNewUser={handleAddNewUser} />
+        <Users handleDeleteUser={handleDeleteUser} />
+      </div>
+    </UsersContext.Provider>
   );
 };
 
