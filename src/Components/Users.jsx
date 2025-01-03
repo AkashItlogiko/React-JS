@@ -1,14 +1,13 @@
-import React, { useContext } from 'react';
 import User from './User';
-import '../../public/index.css';
-import { UsersContext } from '../ContextAPI/UsersContext';
+import '../../public/index.css'; 
+import { useUsersContext } from '../CustomHook/useUseresContex';
 
-const Users = ({ handleDeleteUser }) => {
-  const { users, setUsers } = useContext(UsersContext);
+const Users = ( ) => {
+ const{users}=useUsersContext()
   return (
     <section className="users">
       {users.map(user => (
-        <User key={user.id} user={user} handleDeleteUser={handleDeleteUser} />
+        <User key={user.id} user={user} />
       ))}
     </section>
   );
