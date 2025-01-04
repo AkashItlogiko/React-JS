@@ -1,18 +1,10 @@
-/////======== akhane amader App.jsx ta hocche amader parent Component App->Users->User and ami parent component theke prop drilling ar maddhome data pass korchi amader child component gulote========///
-
-import Users from './Components/Users';
-import NewUser from './Components/NewUser';
-import UsersProvider from './ContextAPI/UsersContext';
-// import './App.css';
-
+import React from 'react';
+import '../src/App.css';
 const App = () => {
   return (
-    <UsersProvider>
-      <div>
-        <NewUser />
-        <Users />
-      </div>
-    </UsersProvider>
+    <div className="App">
+      <h1>Welcome</h1>
+    </div>
   );
 };
 
