@@ -1,10 +1,10 @@
 import React from 'react';
 import '../src/App.css';
+import { BrowserRouter } from 'react-router-dom';
 const App = () => {
   return (
-    <div className="App">
-      <h1>Welcome</h1>
-    </div>
+    <BrowserRouter>
+    </BrowserRouter>
   );
 };
 
