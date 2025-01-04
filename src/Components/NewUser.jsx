@@ -1,10 +1,10 @@
-import React, {  useState } from 'react';
+import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
- 
+
 import { useUsersContext } from '../CustomHook/useUseresContex';
 
-const NewUser = ( ) => {
- const {setUsers}=useUsersContext();
+const NewUser = () => {
+  const { setUsers } = useUsersContext();
   const [username, setUsername] = useState('');
   const handleUserNameChange = e => {
     setUsername(e.target.value);
@@ -13,7 +13,7 @@ const NewUser = ( ) => {
   const handleSubmit = event => {
     event.preventDefault();
     const newUser = { id: uuidv4(), username: username };
-      setUsers(prevUsers => [...prevUsers, newUser]);
+    setUsers(prevUsers => [...prevUsers, newUser]);
     setUsername('');
   };
 

@@ -1,14 +1,10 @@
 import '../../public/index.css';
 import React from 'react';
-import { useUsersContext } from '../CustomHook/useUseresContex';
 
-const User = ({ user  }) => {
-const {setUsers}=useUsersContext();
+const User = ({ user, handleDelete }) => {
   const { id, username } = user;
-  const handleDelete = id => {
-    const filteredUsers = users.filter(user => user.id !== id);
-    setUsers(filteredUsers);
-  };
+  console.log(username);
+
   return (
     <article className="user">
       <h2>{id}</h2>

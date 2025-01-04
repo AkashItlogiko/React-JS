@@ -1,6 +1,6 @@
-import  { useContext } from 'react'
-import { UsersContext } from '../ContextAPI/UsersContext'
+import { useContext } from 'react';
+import { UsersContext } from '../ContextAPI/UsersContext';
 
-export const useUsersContext=()=>{
-    return useContext(UsersContext)
-}
+export const useUsersContext = () => {
+  return useContext(UsersContext);
+};

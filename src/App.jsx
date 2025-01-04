@@ -2,16 +2,14 @@
 
 import Users from './Components/Users';
 import NewUser from './Components/NewUser';
- import UsersProvider from './ContextAPI/UsersContext';
+import UsersProvider from './ContextAPI/UsersContext';
 // import './App.css';
 
 const App = () => {
-  
- 
   return (
-   <UsersProvider>
+    <UsersProvider>
       <div>
-        <NewUser/>
+        <NewUser />
         <Users />
       </div>
     </UsersProvider>
