@@ -1,25 +1,35 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { blogsData } from '../data';
 
 const Blogs = () => {
+  const [blogs, setBlogs] = useState(blogsData);
   const navigate = useNavigate();
+
+  const truncateString = (str, num) => {
+    if (str.length > num) {
+      return str.slice(0, num) + '...';
+    } else {
+      return str;
+    }
+  };
+
   return (
     <div>
       <h2>Blogs Page</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
-        doloremque deserunt error molestiae velit voluptatem et, architecto
-        optio numquam, autem distinctio aliquid possimus consequuntur fugiat
-        assumenda rem quaerat iste repellendus voluptate maxime? Assumenda
-        deleniti quisquam optio cupiditate dolorum voluptas minima repellendus
-        obcaecati, et aspernatur, ut nihil ipsum, voluptatem blanditiis tempora.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et laboriosam
-        voluptates repellat tenetur hic. Nobis, ad possimus. Enim est eligendi
-        suscipit ullam mollitia natus dignissimos voluptatem et provident! Quae,
-        sed.
-      </p>
+      <section>
+        {blogs.map(blog => {
+          const { id, title, body } = blog;
+          return (
+            <article key={id}>
+              <h3>{title}</h3>
+              <p>{truncateString(body, 100)}</p>
+              <Link to={title}>Learn More</Link>
+            </article>
+          );
+        })}
+      </section>
+
       <button
         onClick={() => {
           navigate('/');
