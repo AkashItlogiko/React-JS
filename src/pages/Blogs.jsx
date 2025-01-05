@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Blogs = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <h2>Blogs Page</h2>
@@ -18,6 +20,13 @@ const Blogs = () => {
         suscipit ullam mollitia natus dignissimos voluptatem et provident! Quae,
         sed.
       </p>
+      <button
+        onClick={() => {
+          navigate('/');
+        }}
+      >
+        Go to Home Page
+      </button>
     </div>
   );
 };
