@@ -1,9 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Contact = () => {
+  const navigate = useNavigate();
   return (
     <div>
-      <h1>Contact Page</h1>
+      <h2>Contact Page</h2>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
         doloremque deserunt error molestiae velit voluptatem et, architecto
@@ -18,6 +20,13 @@ const Contact = () => {
         suscipit ullam mollitia natus dignissimos voluptatem et provident! Quae,
         sed.
       </p>
+      <button
+        onClick={() => {
+          navigate('/');
+        }}
+      >
+        Go to Home Page
+      </button>
     </div>
   );
 };

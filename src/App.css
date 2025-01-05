@@ -17,3 +17,21 @@ h1 {
 .invalid {
   background-color: red;
 }
+nav {
+  height: 10vh;
+  background-color: #e3cdb3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-link {
+  color: white;
+  margin: 1rem;
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: orange;
+}
+nav .active {
+  color: red;
+}
