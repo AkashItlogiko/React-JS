@@ -3,21 +3,25 @@ import React from 'react';
 const Home = () => {
   return (
     <div>
-      <h2>Home Page</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
-        doloremque deserunt error molestiae velit voluptatem et, architecto
-        optio numquam, autem distinctio aliquid possimus consequuntur fugiat
-        assumenda rem quaerat iste repellendus voluptate maxime? Assumenda
-        deleniti quisquam optio cupiditate dolorum voluptas minima repellendus
-        obcaecati, et aspernatur, ut nihil ipsum, voluptatem blanditiis tempora.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et laboriosam
-        voluptates repellat tenetur hic. Nobis, ad possimus. Enim est eligendi
-        suscipit ullam mollitia natus dignissimos voluptatem et provident! Quae,
-        sed.
-      </p>
+      <h1>Home Page</h1>
+
+      <div>
+        <h2>Blog 1</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem ea
+          sit odio, neque eum velit illo repellat amet! Illum ipsam deleniti qui
+          reprehenderit consequuntur optio molestiae eius laborum. Vitae, rem.
+        </p>
+      </div>
+
+      <div>
+        <h2>Blog 2</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem ea
+          sit odio, neque eum velit illo repellat amet! Illum ipsam deleniti qui
+          reprehenderit consequuntur optio molestiae eius laborum. Vitae, rem.
+        </p>
+      </div>
     </div>
   );
 };
