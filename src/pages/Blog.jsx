@@ -3,6 +3,7 @@ import { useLocation, useParams } from 'react-router-dom';
 const Blog = () => {
   const { title } = useParams();
   const location = useLocation();
+ 
 
   return (
     <div>
