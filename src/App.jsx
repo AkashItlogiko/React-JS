@@ -3,9 +3,11 @@ import Home from './pages/Home';
 import Blogs from './pages/Blogs';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
+import User from './pages/User';
 import Error from './pages/Error';
 import '../src/App.css';
 import Navbar from './components/Navbar';
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -15,12 +17,8 @@ const App = () => {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blogs/:title" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<Error />} /> //akhane ami path='*' aita mane
-        hocche jodi eemon kono route ba url diye amader browser ar moddhe hit
-        kora hoy jei route ba url ta amra create kori nai tokhon oi route ba url
-        ta amader ai astic "*" path ar moddhe chole ashbe and akhane amader
-        element ar moddhe jei Component ta ache oi Component ar moddhe jei
-        content gulo ache ta browser ar moddhe show korbe
+        <Route path="/user" element={<User />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>
   );
