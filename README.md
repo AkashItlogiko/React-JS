@@ -1,77 +1,25 @@
-[ best practice for a react project structure](https://www.youtube.com/watch?v=Emb-pOw_LmY&list=PLgH5QX0i9K3rGtitufynBKMy5gAFpa1y8&index=66)
+[ How to create a JSON server](https://www.youtube.com/watch?v=AvXiwzRyA1o&list=PLgH5QX0i9K3rGtitufynBKMy5gAFpa1y8&index=67)
 
-`Vit`ba `Parcel`(bundler) ar maddhome aketa frech ReactJs project create kore
-jokon amra ReactJs project korbo tokon amader file structure ta kemon howa uchit
-ta ai khane kora hoyace ashole ake ake company ae ake ake dhoroner file
-structure thakete pare ba ai ta parson to parson vari kore thaki aikhani amader
-standard way ta follow kore hoyeche....
+amra JSON server create kore khub sohoje get request post request put request
+delete request mane HTTP request gulo create korte pari...
 
-1.`src` directory ar moddhe amra akta directory create korbo routes nam aaa and
-oi routes directory ar moddhe amader akta file create korbo Index.jsx nam aaa
-and ai Index.jsx file ar moddhe amra amader sob routing ar kaj korbo...and ai
-routes directory ar moddhe amra PrivateRoute ar kaj korar jonno PrivateRoute.jsx
-nam aa akta file create korbo and ProtectedRoute ar kaj korar jonno
-ProtectedRoute.jsx nam aaa r ooo akta file create korbo amader routes directory
-ar moddhe.....
+json server take amader ReactJs project ar moddhe install korar jonno ai command
+ta chalate hobe npm i json-server ba amra ai website theke ooo ai command ta
+copy kore niye ashte pari [(Website)](https://www.npmjs.com/package/json-server)
 
-2.src/App.jsx ar moddhe arma shudhu route guloke access korbo ta chara rrr kichu
-korbo na amader src/App.jsx ar moddhe.
+server take amader ReactJs project ar moddhe install korar pore database
+directory ar moddhe amra akta db.json file ar moddhe kichu damy data set kore
+diyechi and tar pore amader ai command ta chalate hobe
+`npx json-server -p 3001 -w database/db.json` ar fole amader json server ta on
+hoye jabe and -p 3001 aita diye ami bolechi 3001 port a cholbe amader ai server
+ta and -w database/db.json aita diye bolechi all time amader database directory
+ar moddhe jei db.json file ta ache oi file take watch koro
 
-3.amader project ar sob pages gulo amra amader src directory ar moddhe pages
-directory create kore tar moddhe rakhbo and ai pages directory ar moddhe amader
-oonek file and sub directory thakte pare jemon home directory jar moddhe amader
-home ar page gulo thakbe.....
+and amra jei API ta pabo oi API ar moddhe theke data fatch korar jonno amra
+chaile ReactJs ar bydefault `useEffect()`Hook ta use korte pari ba `axios` use
+kore..o amader ai API theke data data fatch korte pari ..
 
-4.amader Component gulo rakhar jonno amra src directory ar moddhe components nam
-aa akta directory create korbo and oi component directory ar moddhe amader sob
-components gulo thakbe jodi amra kono complex component create kori tahole amder
-src/components directory ar moddhe sub directory create kore tar moddhe rakhte
-hobe....
+axios install korar jonno amader ai command ta chalate hobe `npm axios`
 
-5.jokhon amra kono component create kori tokhon oonek somoy amader image ar
-proyojon hoy ba component ke style korar proyojon hoy tokhon oi image ba sytle
-ar file gulo rakhar jonno amara src directory ar moddhe assets directory create
-kori and ai assets directory ar moddhe amader image and style nam aa directory
-create kore tar moddhe rakhi amader image and style ar file gulo....jei image
-and style guloke amra global eeee access korte chacchi oi file ba directory gulo
-amra ai assets ar moddhe rekhe debo...
-
-6.amader environment variable gulo setUp korar jonno amra src directory ar
-moddhe config nam aaa akta directory create kore ai config directory ar moddhe
-environment variable gulo setUp kori...
-
-7.oonek somoy dekha jai amader header sob page ar jonno same thake amader footer
-sob page ar jonno same thake tokhon amra ai header and footer ke src directory
-ar moddhe layouts nam aa akta directory create kore tar moddhe amader ai header
-and footer rakhbo 2 ta file create kore mane amder project ar moddhe jei gulo
-sob page ar moddhei same thakbe oi jinish guloke amra ai layouts ar moddhe
-rakhbo.......
-
-8.jodi amra ReactJs ar redux ba ReactRedux ta use kori tahole amra src directory
-ar moddhe middleware nam aaa akta directory create korbo and ai middleware
-directory ar moddhe side effect gulo amra kori and API ooo call dei ai
-middleware directory ar moddhe theke.
-
-9.amra ReactJs ar redux aaa ba ReactRedux aaaa Action dei and oi Action ar
-oopore base kore reducer kono akta kaj kore thake and ai Action and reducer ke
-rakhar jonno amra services nam aa akta directory create kori amader src ar
-moddhe...and ai services ar moddhe amader actions and reducers and constants and
-utils ai directory gulo thakebe.
-
-- `actions` directory ar moddhe amader action related file gulo thakbe.
-
-- `reducers` directory ar moddhe amader reducer reladed file gulo thakbe.
-
-- `constants` directory ar moddhe amader constant related file gulo thakbe
-
-- `utils` directory ar moddhe amader formatting related file gulo thakbe jemon
-  date format ta oonek bar korar proyojon hote pare and number format oonek bar
-  korar proyojon hote pare and shei kaj gulo amra.
-
-`utils` directory ar moddhe kori.....
-
-NOTE:ai file structure ta hocche standared akta file structure akhane amra
-App.jsx ar moddhe theke shudhu Route ke access korbo and route ar moddhe diye
-amader page call hobe and oi page ar moddhe amader niye jabe ba browser aa show
-korbe amader oi page ta and akta page ar moddh amader ooonek gulo component
-thakte pare....
+run this command to run JSON server
+`npx json-server -p 3001 -w database/db.json`
