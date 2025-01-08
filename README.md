@@ -1,25 +1,14 @@
-[ How to create a JSON server](https://www.youtube.com/watch?v=AvXiwzRyA1o&list=PLgH5QX0i9K3rGtitufynBKMy5gAFpa1y8&index=67)
+# page title setup react helmet npm package
 
-amra JSON server create kore khub sohoje get request post request put request
-delete request mane HTTP request gulo create korte pari...
+[ React_helmet_npm_package_page_title_setup](https://www.youtube.com/watch?v=Uvm024uzSjk&list=PLgH5QX0i9K3rGtitufynBKMy5gAFpa1y8&index=69)
 
-json server take amader ReactJs project ar moddhe install korar jonno ai command
-ta chalate hobe npm i json-server ba amra ai website theke ooo ai command ta
-copy kore niye ashte pari [(Website)](https://www.npmjs.com/package/json-server)
+ReactJs ar moddhe jokhon amra route use korbo tokon ake page ar moddho thake
+jokhon onno page jabe tokon amader protita page ar title dhekanor jonna amra
+aketa package install kore nibo jar nam `helmet` and title ta amra amader
+browser ar tab ar moddhe dekhte pai.
 
-server take amader ReactJs project ar moddhe install korar pore database
-directory ar moddhe amra akta db.json file ar moddhe kichu damy data set kore
-diyechi and tar pore amader ai command ta chalate hobe
-`npx json-server -p 3001 -w database/db.json` ar fole amader json server ta on
-hoye jabe and -p 3001 aita diye ami bolechi 3001 port a cholbe amader ai server
-ta and -w database/db.json aita diye bolechi all time amader database directory
-ar moddhe jei db.json file ta ache oi file take watch koro
+## 1st
 
-and amra jei API ta pabo oi API ar moddhe theke data fatch korar jonno amra
-chaile ReactJs ar bydefault `useEffect()`Hook ta use korte pari ba `axios` use
-kore..o amader ai API theke data data fatch korte pari ..
+- `npm helmet package` [(website)](https://www.npmjs.com/package/react-helmet)
 
-axios install korar jonno amader ai command ta chalate hobe `npm axios`
-
-run this command to run JSON server
-`npx json-server -p 3001 -w database/db.json`
+* helmet package instal command: `npm i react-helmet`
