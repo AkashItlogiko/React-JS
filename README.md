@@ -1,13 +1,27 @@
-# react memo
+# React Hooks | useCallback hook
 
-[ react memo](https://www.youtube.com/watch?v=pwh4oyGpVPk&list=PLgH5QX0i9K3rGtitufynBKMy5gAFpa1y8&index=70)
+[ React Hooks | useCallback hook](https://www.youtube.com/watch?v=t9qUJ0SRQuE&list=PLgH5QX0i9K3rGtitufynBKMy5gAFpa1y8&index=71)
 
-```memo``` function ta hoccha ReactJS ar builtin aketa function jar maddhome amra component ar un-necessary rendering take bondho korti pari.
+jokhon amra Callback function niye kaj korbo tokhon jodi amader oi callback
+function ar un-nasessary call dewa take bondho korte chai tokhon amra
+`useCallback`Hook ta use korbo and ai `useCallback`Hook ta hocch ReactJs ar akta
+builtin Hook......
 
-```memo``` maddhome amra re-rendering take bondho kore dita pari..jokon amader kono componet render howar dorkar nay tau jodi say componet render hoya thaki memo()function ta used kore amra oi rendering ta off kore dita pare..
-
-* ak eee props ar value jonno jokhon amader component ar un-necessary rendering take off kore dite pari
-
-* static props ar jonna ay memo() function ta kaj korbe but jay props protita rendring change hobe say dik thaki ay memo() function kaj korbe na.
-
-Note: ReactJs ar small projec ar khettre amader ai memo() function ta na use korle ooo hobe...but ReactJs ar Medium and Big size project ar khetre amader ReactJs ar ai builtin memo() function ta use kora mendatory....
+Callback function ta bolte akhane bojhano hoyeche jemon amra jani jokhon amra
+parent component ar moddhe theke child component ar moddhe data pass kori tokhon
+amra props aakare amader parent component ar moddhe theke child component ar
+moddhe data pass kori ba props drilling kore data pass kori and aitake bole
+`top to bottom`and jokhon amra child component ar moddhe theke parent component
+ar moddhe data pass kori tokhon oitake bole `bottom to top` ba
+`state lifting`...jokhon amra `state lifting` ba `bottom to top` korbo mane
+amader child component ar moddhe theke parent component ar moddhe data pass
+korbo tokhon amader parent component ar moddhe akta method ba callback function
+create korte hoy oi child component theke asha data take accept korar jonno and
+ai method ba callback function take amader props ar maddhome pass kore dite hobe
+amader parent component ar moddhe theke child componet ke call kore oi child
+component ar moddhe props aakare amader oi method ba callback function take pass
+kore dite hobe jei method ba callback function take amra create korechi amader
+parent component ar moddhe and aije jei method ba callback function take amra
+amader child component ar moddhe pass korchi amader child component ar moddhe
+theke data aanar jonno amader parent component ar moddhe ai method ta ba
+callback function takei bole muloto Callback function....
