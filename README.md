@@ -1,14 +1,13 @@
-# page title setup react helmet npm package
+# react memo
 
-[ React_helmet_npm_package_page_title_setup](https://www.youtube.com/watch?v=Uvm024uzSjk&list=PLgH5QX0i9K3rGtitufynBKMy5gAFpa1y8&index=69)
+[ react memo](https://www.youtube.com/watch?v=pwh4oyGpVPk&list=PLgH5QX0i9K3rGtitufynBKMy5gAFpa1y8&index=70)
 
-ReactJs ar moddhe jokhon amra route use korbo tokon ake page ar moddho thake
-jokhon onno page jabe tokon amader protita page ar title dhekanor jonna amra
-aketa package install kore nibo jar nam `helmet` and title ta amra amader
-browser ar tab ar moddhe dekhte pai.
+```memo``` function ta hoccha ReactJS ar builtin aketa function jar maddhome amra component ar un-necessary rendering take bondho korti pari.
 
-## 1st
+```memo``` maddhome amra re-rendering take bondho kore dita pari..jokon amader kono componet render howar dorkar nay tau jodi say componet render hoya thaki memo()function ta used kore amra oi rendering ta off kore dita pare..
 
-- `npm helmet package` [(website)](https://www.npmjs.com/package/react-helmet)
+* ak eee props ar value jonno jokhon amader component ar un-necessary rendering take off kore dite pari
 
-* helmet package instal command: `npm i react-helmet`
+* static props ar jonna ay memo() function ta kaj korbe but jay props protita rendring change hobe say dik thaki ay memo() function kaj korbe na.
+
+Note: ReactJs ar small projec ar khettre amader ai memo() function ta na use korle ooo hobe...but ReactJs ar Medium and Big size project ar khetre amader ReactJs ar ai builtin memo() function ta use kora mendatory....
