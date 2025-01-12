@@ -2,7 +2,7 @@
   const { createStore } = require('redux');
 
   const INCREMENT = 'INCREMENT';
-  const DECREMENT = 'DECREMENT';
+  const DECREMENT = 'DECREME NT';
   const ADD_USER = 'ADD_USER';
 
   //state
