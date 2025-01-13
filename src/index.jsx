@@ -1,42 +1,25 @@
-//state -count:0
-// action-increment,decrement,reset
-//reducer
-//store
+//products constants
+const GET_PRODUCTS="GET_PRODUCTS";
+const ADD_PRODUCTS="ADD_PRODUCT";
 
-//constants
+// productReducer
 
-const { createStore } = require('redux');
+const initialProductState={
+  products:["sugar","salt"],
+  numberofProducts:2,
+}
 
-const ADD_USER = 'ADD_USER';
-
-const initialState = {
-  users: ['anis'],
-  count: 1,
-};
-
-const addUser = user => {
-  return {
-    type: ADD_USER,
-    payload: user,
-  };
-};
-//CREATING REDUCER
-const userReducer = (state = initialState, action) => {
-  switch (action.type) {
-    case ADD_USER:
-      return {
-        users: [...state.users, action.payload],
-        count: state.count + 1,
-      };
-    default:
-      state;
+const getProducts=()=>{
+  return{
+    type:GET_PRODUCTS,
   }
-};
+}
 
-// store
+const addProduct=(product)=>{
+  return{
+    type:GET_PRODUCTS,
+    payload:product
+  }
+}
 
-const store = createStore(userReducer);
-store.subscribe(() => {
-  console.log(store.getState());
-});
-store.dispatch(addUser('Dip Sanatan'));
+//cartReducer
