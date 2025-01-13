@@ -1,33 +1,30 @@
-# Redux-toolkit bangla tutorial 2 : redux | state, actions
+# redux | complete counter app
 
-[ redux | state, actions](https://www.youtube.com/watch?v=ttunWZ9sN0Q&list=PLgH5QX0i9K3rGtitufynBKMy5gAFpa1y8&index=75)
+[ redux | complete counter app](https://www.youtube.com/watch?v=__nMP46Z580&list=PLgH5QX0i9K3pe7Z7ATcyLdUW3grE4Vfld&index=5)
 
-Readux hoccha `Js` aketa library readux ka install korar ahge amader first npm
-ka initialize kore hobe atar commend used korte hobe `npm init -y`
+ai branch ar moddhe amra amader ReactJs Project ar sathe Redux javascript
+library ta use korechi
 
-## For Installing Redux on ReactJs Project
+jemon ta amra Redux ar intoduction ar moddhe jenechilam Redux hocche akta
+javascript library and ai Redux javascript library ar uddesho hocche amder state
+ke global eee manage kora...amra ReactJs ar small project ar khettre Redux
+javascript library ta use korbo na amader ReactJs project ar sathe tokhon amra
+chaile amader ReactJs ar builtin `useContext` hook ta use kore amader state ba
+variable ar value take publically set kore dite pari and `useReducer` Hook ta
+use kore amder oonek gulo state ke akta state ar moddhe rekhe handel korte
+pari.....For More information about Redux Check('redux|Introduction_to_redux'
+Branch)
 
-Redux used korar ahge amader ata ka install kore nita hobe.
+# INSTALLATION
 
-- Used Commend `npm install react-redux`
-
-amader ai branch ar moddhe amra just amader directory ar moddhe likhe rekhechi
-kivabe amader redux ta kaj kore....
-
-- Amader App state thakbe taki control korar jonnay amra redux used kore thaki.
-
-- Kno aketa app maje view thaki ar ay view ka dispatch kore action ar action
-  maje sov somoy 2ta jenis thaki aketa hocca `type` ar aketa hocca `payload` ar
-  ay action type upor base kore `reducer` kaj korbe then store ta kaj korbe.
-
-  `reducer` hocca aketa pure function pure function hocca ja function input niya
-  defineitely output dai taki pure function bole.`reducer` kaj hoccha amader ja
-  ja logic ashe say gula ke hendel kore ja state ashe thaki update kora ay khani
-  amra jay action dibo tar type upor base kore reducer kaj korbe.
-
-* `Store`
-* getState() mathod thaki state gular obosta dhakte parbo.
-
-* dispatch()method thaki kno aketa action ka dispacth korte parbo.
-
-* subscribe() method jar thaki view sate amra store ka subscribe korte parbo.
+- Redux a kaj hoy muloto jokhon kono action dispatch hoy tokhon oi action ar
+  type oonujai oi action ta amder Reducer ar moddhe jai and Reducer ar moddhe
+  theke sob logic handel korar pore amder state ta update hoye store ar moddhe
+  chole ashe and ai store ta amder View ke update kore dei and ai store ta amder
+  ReactJs project ar moddhe create korar jonno amader prothom aaa Redux ta
+  install korte hobe amader ReactJs porject ar moddhe ai command ta chaliye npm
+  install redux karon amader store create korte hole amader createStore method
+  ta lagbe and ai method ta amader Redux package ar moddhe ache...and store
+  create kora hoye gele amader ReactRedux package ta install korte hobe ai
+  command ar maddhome npm install react-redux jar fole amra amader redux
+  javascript library ke ReactJs parject ar sathe connect kore dite parbo....
