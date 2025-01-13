@@ -7,47 +7,26 @@
 
 const { createStore } = require('redux');
 
-const INCREMENT = 'INCREMENT';
-const DECREMENT = 'DECREMENT';
-const RESET = 'RESET';
+const ADD_USER = 'ADD_USER';
 
 const initialState = {
-  count: 0,
+  users: ['anis'],
+  count: 1,
 };
 
-const incrementCounterAction = () => {
+const addUser = user => {
   return {
-    type: INCREMENT,
+    type: ADD_USER,
+    payload: user,
   };
 };
-const decrementCounterAction = () => {
-  return {
-    type: DECREMENT,
-  };
-};
-const resetCounterAction = () => {
-  return {
-    type: RESET,
-  };
-};
-
 //CREATING REDUCER
-const counterReducer = (state = initialState, action) => {
+const userReducer = (state = initialState, action) => {
   switch (action.type) {
-    case INCREMENT:
+    case ADD_USER:
       return {
-        ...state,
+        users: [...state.users, action.payload],
         count: state.count + 1,
-      };
-    case DECREMENT:
-      return {
-        ...state,
-        count: state.count - 1,
-      };
-    case RESET:
-      return {
-        ...state,
-        count: 0,
       };
     default:
       state;
@@ -56,10 +35,8 @@ const counterReducer = (state = initialState, action) => {
 
 // store
 
-const store = createStore(counterReducer);
+const store = createStore(userReducer);
 store.subscribe(() => {
   console.log(store.getState());
 });
-store.dispatch(incrementCounterAction());
-store.dispatch(decrementCounterAction());
-store.dispatch(resetCounterAction());
+store.dispatch(addUser('Dip Sanatan'));

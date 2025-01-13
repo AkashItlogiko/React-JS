@@ -1,30 +1,14 @@
-# redux | complete counter app
+# redux | payload
 
-[ redux | complete counter app](https://www.youtube.com/watch?v=__nMP46Z580&list=PLgH5QX0i9K3pe7Z7ATcyLdUW3grE4Vfld&index=5)
+[ redux | payload](https://www.youtube.com/watch?v=7-Y96jM7xmg&list=PLgH5QX0i9K3pe7Z7ATcyLdUW3grE4Vfld&index=6)
 
-ai branch ar moddhe amra amader ReactJs Project ar sathe Redux javascript
-library ta use korechi
+# For Installing Redux on ReactJs Project
 
-jemon ta amra Redux ar intoduction ar moddhe jenechilam Redux hocche akta
-javascript library and ai Redux javascript library ar uddesho hocche amder state
-ke global eee manage kora...amra ReactJs ar small project ar khettre Redux
-javascript library ta use korbo na amader ReactJs project ar sathe tokhon amra
-chaile amader ReactJs ar builtin `useContext` hook ta use kore amader state ba
-variable ar value take publically set kore dite pari and `useReducer` Hook ta
-use kore amder oonek gulo state ke akta state ar moddhe rekhe handel korte
-pari.....For More information about Redux Check('redux|Introduction_to_redux'
-Branch)
-
-# INSTALLATION
-
-- Redux a kaj hoy muloto jokhon kono action dispatch hoy tokhon oi action ar
-  type oonujai oi action ta amder Reducer ar moddhe jai and Reducer ar moddhe
-  theke sob logic handel korar pore amder state ta update hoye store ar moddhe
-  chole ashe and ai store ta amder View ke update kore dei and ai store ta amder
-  ReactJs project ar moddhe create korar jonno amader prothom aaa Redux ta
-  install korte hobe amader ReactJs porject ar moddhe ai command ta chaliye npm
-  install redux karon amader store create korte hole amader createStore method
-  ta lagbe and ai method ta amader Redux package ar moddhe ache...and store
-  create kora hoye gele amader ReactRedux package ta install korte hobe ai
-  command ar maddhome npm install react-redux jar fole amra amader redux
-  javascript library ke ReactJs parject ar sathe connect kore dite parbo....
+`npm install react-redux` kintu amra ai branch ar moddhe ReactJs project ar
+sathe Redux javascript library take use kori nai amra shudhu Redux javascript
+library niye kaj korchi tai amra akhane `npm install redux`command ta chaliye
+amader redux javascript library take install kore niyechi....kintu amra ai
+branch ar moddhe ReactJs project ar sathe Redux javascript library take use kori
+nai amra shudhu Redux javascript library niye kaj korchi tai amra akhane npm
+install reduxcommand ta chaliye amader redux javascript library take install
+kore niyechi....
