@@ -1,6 +1,6 @@
-# redux | Middleware | redux-logger
+# redux | fetch data using redux-thunk
 
-[ redux | Middleware | redux-logger](https://www.youtube.com/watch?v=dk42KOFcRkk&list=PLgH5QX0i9K3pe7Z7ATcyLdUW3grE4Vfld&index=8)
+[ redux | fetch data using redux-thunk](https://www.youtube.com/watch?v=ppug0jE3poY&list=PLgH5QX0i9K3pe7Z7ATcyLdUW3grE4Vfld&index=9)
 
 ## For Installing Redux
 
@@ -33,3 +33,11 @@ for install this redux-logger middleware run this command `npm i redux-logger`
 ai redux-logger Middleware ta amader previous state ki chilo ,kon action
 hoyeche, next state ta dekhabe and action ta kokhon hoyechilo oi time ta
 dekhabe...
+
+# redux-thunk Middleware
+
+`redux-thunk` hocche akta middleware
+
+for install this redux-thunk middleware run this command `npm i redux-thunk`
+
+## redux-thunk Middleware ar maddhome amra asyncronous action create korte pari and oi action ar moddhe API theke data fetching ar kaj korte pari asyncronous vabe
