@@ -1,4 +1,4 @@
-const { createStore } = require('redux');
+const { createStore, combinReducers } = require('redux');
 
 //products constants
 const GET_PRODUCTS = 'GET_PRODUCTS';
