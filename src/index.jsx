@@ -1,10 +1,11 @@
-const { createStore } = require('redux');
+const { createStore, applyMiddleware } = require('redux');
+const { default: logger } = require('redux-logger');
 
 //products constants
 const GET_PRODUCTS = 'GET_PRODUCTS';
 const ADD_PRODUCTS = 'ADD_PRODUCT';
 
-// productReducer
+// productState
 
 const initialProductState = {
   products: ['sugar', 'salt'],
@@ -27,22 +28,7 @@ const addProduct = product => {
 };
 
 //ProductReducer
-const cartReducer = (state = initialCartState, action) => {
-  switch (action.type) {
-    case GET_CART_ITEMS:
-      return {
-        ...state,
-      };
-    case ADD_CART_ITEM:
-      return {
-        cart: [...state.cart, action.payload],
-        numberofCartProducts: state.numberofCartProducts + 1,
-      };
-    default:
-      return state;
-  }
-};
-//cartReducer
+
 const productReducer = (state = initialProductState, action) => {
   switch (action.type) {
     case GET_PRODUCTS:
@@ -59,19 +45,10 @@ const productReducer = (state = initialProductState, action) => {
   }
 };
 
-//cartReducer
-//combinReducers muloto multiple reducers ka hendle korbar jonna used kora hoy ata muloto aketa build in function.
-const rootReducer = combinReducers({
-  productR: productReducer,
-  cartR: cartReducer,
-});
-
 //store
-const store = createStore(rootReducer);
+const store = createStore(productReducer,applyMiddleware(logger));
 store.subscribe(() => {
   console.log(store.getState());
 });
 store.dispatch(getProducts());
 store.dispatch(addProduct('pen'));
-store.dispatch(getCart());
-store.dispatch(addCart('pen'));
