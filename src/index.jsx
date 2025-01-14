@@ -85,7 +85,7 @@ const cartReducer = (state = initialProductState, action) => {
 };
 
 //cartReducer
-//combinReducers muloto multiple reducers ka hendle korbar jonna used kora hoy
+//combinReducers muloto multiple reducers ka hendle korbar jonna used kora hoy ata muloto aketa build in function.
 const rootReducer = combinReducers({
   productR: productReducer,
   cartR: cartReducer,
