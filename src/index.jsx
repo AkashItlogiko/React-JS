@@ -4,21 +4,11 @@ const { createStore } = require('redux');
 const GET_PRODUCTS = 'GET_PRODUCTS';
 const ADD_PRODUCTS = 'ADD_PRODUCT';
 
-//cart constants
-const GET_CART_ITEMS = 'GET_CART_ITEMS';
-const ADD_CART_ITEM = 'ADD_CART_ITEM';
-
 // productReducer
 
 const initialProductState = {
   products: ['sugar', 'salt'],
   numberofProducts: 2,
-};
-
-//Cart states
-const initialCartState = {
-  cart: ['sugar'],
-  numberofCartProducts: 1,
 };
 
 //product actions
@@ -36,23 +26,8 @@ const addProduct = product => {
   };
 };
 
-//cart actions
-
-const getCart = () => {
-  return {
-    type: GET_CART_ITEMS,
-  };
-};
-
-const addCart = product => {
-  return {
-    type: ADD_CART_ITEM,
-    payload: product,
-  };
-};
-
 //ProductReducer
-const productReducer = (state = initialCartState, action) => {
+const cartReducer = (state = initialCartState, action) => {
   switch (action.type) {
     case GET_CART_ITEMS:
       return {
@@ -68,7 +43,7 @@ const productReducer = (state = initialCartState, action) => {
   }
 };
 //cartReducer
-const cartReducer = (state = initialProductState, action) => {
+const productReducer = (state = initialProductState, action) => {
   switch (action.type) {
     case GET_PRODUCTS:
       return {
