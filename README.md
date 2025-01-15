@@ -1,8 +1,8 @@
-# React-redux | complete counter react
+# react-redux | fetch data
 
-[react-redux | complete counter react](https://www.youtube.com/watch?v=paY1O3oD3gg&list=PLgH5QX0i9K3pe7Z7ATcyLdUW3grE4Vfld&index=10)
+[ react-redux | fetch data](https://www.youtube.com/watch?v=ToS6afYzyhE&list=PLgH5QX0i9K3pe7Z7ATcyLdUW3grE4Vfld&index=11)
 
-## ai branch ar moddhe amra amader ReactJs Project ar sathe Redux javascript library ta use korechi
+## ai branch ar moddhe amra amader ReactJs Project ar sathe Redux javascript library ta use korechi and dekhechi ki vabe redux ar maddhome API theke data fetch kore ReactJs ar moddhe use korte hoy
 
 jemon ta amra Redux ar intoduction ar moddhe jenechilam Redux hocche akta
 javascript library and ai Redux javascript library ar uddesho hocche amder state
