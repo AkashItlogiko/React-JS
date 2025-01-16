@@ -1,8 +1,8 @@
-# react-redux | fetch data
+# Counter app using redux toolkit
 
-[ react-redux | fetch data](https://www.youtube.com/watch?v=ToS6afYzyhE&list=PLgH5QX0i9K3pe7Z7ATcyLdUW3grE4Vfld&index=11)
+[Counter app using redux toolkit](https://www.youtube.com/watch?v=1aOGY0rRBQk&list=PLgH5QX0i9K3pe7Z7ATcyLdUW3grE4Vfld&index=12)
 
-## ai branch ar moddhe amra amader ReactJs Project ar sathe Redux javascript library ta use korechi and dekhechi ki vabe redux ar maddhome API theke data fetch kore ReactJs ar moddhe use korte hoy
+## ai branch ar moddhe amra amader ReactJs Project ar sathe Redux javascript library ar toolkit use kore Counter App create korechi
 
 jemon ta amra Redux ar intoduction ar moddhe jenechilam Redux hocche akta
 javascript library and ai Redux javascript library ar uddesho hocche amder state
@@ -12,20 +12,14 @@ chaile amader ReactJs ar builtin useContext hook ta use kore amader state ba
 variable ar value take publically set kore dite pari and useReducer Hook ta use
 kore amder oonek gulo state ke akta state ar moddhe rekhe handel korte pari.....
 
-## For More information about Redux Check('redux|Introduction_to_redux' Branch)
+## For More information about Redux Check('Counter app using redux toolkit' Branch)
 
 # INSTALLATION
 
-- Redux a kaj hoy muloto jokhon kono action dispatch hoy tokhon oi action ar
-  type oonujai oi action ta amder Reducer ar moddhe jai and Reducer ar moddhe
-  theke sob logic handel korar pore amder state ta update hoye store ar moddhe
-  chole ashe and ai store ta amder View ke update kore dei and ai store ta amder
-  ReactJs project ar moddhe create korar jonno amader prothom aaa Redux ta
-  install korte hobe amader ReactJs porject ar moddhe ai command ta chaliye
-  ` npm install redux` karon amader store create korte hole amader createStore
-  method ta lagbe and ai method ta amader Redux package ar moddhe ache...and
-  store create kora hoye gele amader ReactRedux package ta install korte hobe ai
-  command ar maddhome `npm install react-redux` jar fole amra amader redux
-  javascript library ke ReactJs parject ar sathe connect kore dite parbo....
+- for installing `Redux toolkit` into `ReactJs project` run the folling
+  command:`npm install @reduxjs/toolkit react-redux` or go to the ReduxToolkit
+  official website [Link](https://redux-toolkit.js.org/tutorials/quick-start)and
+  ai react-redux package ar kaj hocche amader Redux javascript library ar sathe
+  amader ReactJs project ke connected kore dewa.
 
-Check(src/App.jsx and src/services/actions/TodosAction.jsx and src/services/constants/TodosConstant.jsx and src/services/reducers/TodosReducer.jsx and src/store.jsx and src/main.jsx and src/components/Todos.jsx)
+# IMPORTANT
