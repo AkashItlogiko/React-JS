@@ -19,10 +19,11 @@ const Todos = () => {
       <section>
         {todos &&
           todos.map(todo => {
+            const { id, title } = todo;
             return (
-              <article>
-                <h4>{todo.id}</h4>
-                <h4>{todo.todo}</h4>
+              <article key={id}>
+                <h4>{id}</h4>
+                <h4>{title}</h4>
               </article>
             );
           })}
