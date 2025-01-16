@@ -1,10 +1,12 @@
 import './App.css';
 import React from 'react';
+import CounterView from './features/counter/CounterView';
 
 const App = () => {
   return (
-    <div className="App">
+    <div style={{ textAlign: 'center' }}>
       <h1>Counter App</h1>
+      <CounterView />
     </div>
   );
 };
