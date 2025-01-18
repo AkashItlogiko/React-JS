@@ -16,10 +16,11 @@ export const counterSlice = createSlice({
     reset: state => {
       state.count = 0;
     },
-    increaseByAmount: (state,action) => {
+    increaseByAmount: (state, action) => {
       state.count = state.count + action.payload;
     },
   },
 });
-export const { increment, decrement, reset,increaseByAmount } = counterSlice.actions; /////amader reducers ar moddhe amra jei function gulo create korechi oi function gulor nam akhan theke export kore diyechi and ai function gulor nam eee amader action creator ar motto kaj korbe tai amra jei CounterSlice ta create korechi tar sathe action take call kore diyechi CounterSlice.actions jar fole amader ai function gulo increment , dicrement , reset action creator aaa rupantor hoye jabe tai amader extra vabe kono action create korte hobe na
+export const { increment, decrement, reset, increaseByAmount } =
+  counterSlice.actions; /////amader reducers ar moddhe amra jei function gulo create korechi oi function gulor nam akhan theke export kore diyechi and ai function gulor nam eee amader action creator ar motto kaj korbe tai amra jei CounterSlice ta create korechi tar sathe action take call kore diyechi CounterSlice.actions jar fole amader ai function gulo increment , dicrement , reset action creator aaa rupantor hoye jabe tai amader extra vabe kono action create korte hobe na
 export default counterSlice.reducer; ///akhane ami jehetu export default kore export korchi tai ami oono file theke aitake import korar somoy je kono nam diye import korte paro and { } object ar moddhe amader ai CounterSlice ke rakhar dorkar nei karon ami  akhan thke export default korchi tai jodi ami shudhu export kortam tahole amader import korar somoy amader ai CounterSlice take { } object ar moddhe rakhte hoto

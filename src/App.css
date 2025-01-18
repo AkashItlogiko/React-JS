@@ -40,11 +40,14 @@ nav .active {
   color: red;
 }
 section {
+  padding: 2rem;
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: 0.5rem;
 }
 article {
   background-color: aliceblue;
+  color: #000;
+  padding: 0.5rem;
 }
 @media screen and (min-width: 600px) {
   section {
