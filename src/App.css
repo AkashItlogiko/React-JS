@@ -1,7 +1,7 @@
 /*custom style */
 
 * {
-  margin: 0;
+  margin: 1;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
@@ -13,7 +13,7 @@ body {
 }
 nav {
   background-color: rgb(255, 155, 155);
-  height: 5vh;
+  height: 9vh;
   display: flex;
   justify-content: center;
   align-items: center;
