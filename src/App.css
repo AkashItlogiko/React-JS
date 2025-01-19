@@ -1,83 +1,74 @@
-input {
-  padding: 0.1rem;
-  border-radius: 0.6rem;
-  width: 10rem;
-  font-size: 1.2rem;
+/*custom style */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
 }
-/* input:focus {
-  background-color: bisque;
-} */
-h1 {
-  text-align: center;
-  font-size: 3rem;
-}
-h2 {
-  text-align: center;
-  font-size: 1.5rem;
-}
-.valid {
-  background-color: green;
-}
-.invalid {
-  background-color: red;
+body {
+  background-color: beige;
 }
 nav {
-  height: 10vh;
-  background-color: #111010;
+  background-color: rgb(255, 155, 155);
+  height: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
+  gap: 10px;
 }
-.nav-link {
+.nev-link:hover {
   color: white;
-  margin: 1rem;
-  text-decoration: none;
-}
-.nav-link:hover {
-  color: orange;
-}
-nav .active {
-  color: red;
-}
-section {
-  padding: 2rem;
-  display: grid;
-  grid-gap: 0.5rem;
-}
-article {
-  background-color: aliceblue;
-  color: #000;
-  padding: 0.5rem;
-}
-@media screen and (min-width: 600px) {
-  section {
-    grid-template-columns: auto auto;
-  }
-}
-@media screen and (min-width: 992px) {
-  section {
-    grid-template-columns: auto auto auto;
-  }
+  margin: 0 1rem 0 0;
+  transition: all 0.3s;
 }
 
-section {
-  display: grid;
-  grid-gap: 0.5rem;
+main {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+h2 {
+  text-align: center;
+  margin: 3rem;
+}
+table {
+  margin: 3rem;
+  border-collapse: collapse;
+}
+td,
+th {
+  border: 1px solid;
   padding: 1rem;
 }
-article {
-  background-color: #293462;
-  color: white;
-  padding: 0.5rem;
-}
 
-@media (min-width: 600px) {
-  section {
-    grid-template-columns: auto auto;
-  }
+button {
+  width: 5rem;
+  margin: 0.5rem;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
-@media (min-width: 768px) {
-  section {
-    grid-template-columns: auto auto auto;
-  }
+button:hover {
+  background-color: black;
+  color: white;
+}
+.form-field {
+  margin: 1rem;
+}
+input {
+  width: 20rem;
+  padding: 0.2rem;
+}
+footer {
+  background-color: antiquewhite;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
