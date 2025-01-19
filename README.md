@@ -47,6 +47,5 @@ kore logic handel kore amader state take update kore Store aaa pass kore dei and
 amader Store ta updated state ar value diye amader View ke Update kore dei and
 amra View ar moddhe amader updated state ar value take dekhte pari
 
-Check(src/App.jsx and src/freature/counter/counterSlice.jsx and
-src/app/store.jsx and src/main.jsx and src/App.jsx and
-src/freature/counter/CounterView.jsx)
+Check(src/App.jsx and src/freature/post/postSlice.jsx and src/app/store.jsx and
+src/main.jsx and src/App.jsx and src/freature/post/PostsView.jsx)
